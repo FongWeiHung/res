@@ -1,0 +1,54 @@
+<!-- this is a structure of Bootstrap Modal -->
+<style>
+	.clickpls{
+		background-color:#414141;
+		color:white;
+		width:400px;
+		border:none;
+		border-radius:15px;
+		box-shadow:0 8px #6e6e6e;
+		
+	}
+	.clickpls:hover{
+		background-color: #2b2b2b;
+		color: white;}
+	.clickpls:active{
+		background-color: black;
+		box-shadow: 0 5px #666;
+		transform:translateY(4px);
+	}
+</style>
+
+<div class = "container">
+
+<div class="modal fade " id="loginModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-md " role="document">
+		<div class="modal-content">
+			<div class="modal-body px-5">
+					<h2 class="text-center mb-5">Login</h2>
+					<form>
+				<!-- USer input -->
+				<label for="replacemethanks">Username:</label>
+				<div class="box mb-3">
+					<input class="form-control no-border" type="text" id="username" class="form-control"/>
+					
+				</div>
+				<!--username, user_Password,-->
+				<!-- Password input -->
+				<label  for="im-a-uselesstag">Password:</label>
+				<div class="box mb-2">
+					
+					<input type="password" class="form-control no-border" id="user_Password" class="form-control" />
+				</div>
+				<br>
+				<!-- Submit button -->
+				
+				<button onclick="loginUser();" type="button" class="clickpls">Login</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+

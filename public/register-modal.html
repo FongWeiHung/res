@@ -1,0 +1,66 @@
+<!-- this is a structure of Bootstrap Modal -->
+<style>
+	.clickpls{
+		background-color:#414141;
+		color:white;
+		width:400px;
+		border:none;
+		border-radius:15px;
+		box-shadow:0 8px #6e6e6e;
+		
+	}
+	.clickpls:hover{
+		background-color: #2b2b2b;
+		color: white;}
+	.clickpls:active{
+		background-color: black;
+		box-shadow: 0 5px #666;
+		transform:translateY(4px);
+	}
+</style>
+<div class="modal fade " id="registerModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-md " role="document">
+		<div class="modal-content">
+			<div class="modal-body px-5">
+					<h2 class="text-center mb-5">Register</h2>
+					<form>
+				<!-- username--> 
+				<div class="form-outline">
+					<label for="replacemethanks">Username:</label>
+					<input class="form-control no-border" type="text" id="user_Name" class="form-control" />
+				</div>
+				<!--username, first_Name, last_Name, user_Email, user_Password, gender, number-->
+				<!-- Password input -->
+				<div class="form-outline">
+					<label  for="first_Name">First name:</label>
+					<input type="text" class="form-control no-border" id="first_Name" class="form-control" />
+				</div>
+				<div class="form-outline">
+					<label for="last_Name">last name:</label>
+					<input type="text" class="form-control no-border" id="last_Name" class="form-control" />
+				</div>
+				<div class="form-outline">
+					<label  for="user_Email">Email:</label>
+					<input type="text" class="form-control no-border" id="user_Email" class="form-control" />
+				</div>
+				<div class="form-outline">
+					<label  for="user_Password">Password:</label>
+					<input type="password" class="form-control no-border" id="user_Password" class="form-control" />
+				</div>
+				<div class="form-outline">
+					<label  for="gender">Gender:</label>
+					<input type="text" class="form-control no-border" id="gender" class="form-control" />
+				</div>
+				<div class="form-outline">
+					<label  for="number">Phone Number:</label>
+					<input type="number" class="form-control no-border" id="number" class="form-control" />
+				</div>
+				<br>
+				<!-- Submit button -->
+				<button onclick="registerUser();" type="button" class="clickpls">Register</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
