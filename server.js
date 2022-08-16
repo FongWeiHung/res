@@ -27,5 +27,4 @@ app.route('/review/:id').put(reviewController.updateReview)// value goes into wr
 
 app.route('/review/:id').delete(reviewController.deleteReview);//working
 
-app.listen(8080, "127.0.0.1");
-console.log("web server running @ http://127.0.0.1:8080");
+app.listen(3000, ()=> console.log("web server running @ http://127.0.0.1:3000"));
