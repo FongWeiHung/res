@@ -18,7 +18,7 @@ function displayResSearch(category) {
             resCount++;
         }
     }
-    message=resCount+" Restaurant";
+    message=resCount+" Attractions for view!";
     document.getElementById("summary").textContent=message;
     document.getElementById("parent").textContent="";
 

@@ -75,8 +75,8 @@ function showResDetails(element) {
     //document.getElementById("restaurantLocation").textContent = res_array[item].restaurant_Location;
     document.getElementById("restaurantThumb").src = res_array[item].restaurant_Thumb;
     document.getElementById("restaurant_Site").textContent = res_array[item].restaurant_Site;
-    document.getElementById("halal").textContent = res_array[item].restaurant_Halal;
-    document.getElementById("alcohol").textContent = res_array[item].restaurant_Alcohol;
+    //document.getElementById("halal").textContent = res_array[item].restaurant_Halal;
+    //document.getElementById("alcohol").textContent = res_array[item].restaurant_Alcohol;
     
   
     //document.getElementById("trailer1").src = movie_array[item].video1;
