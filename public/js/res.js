@@ -29,7 +29,7 @@ function displayRes(category) {
         var thumbnail = res_array[count].restaurant_Thumb;
         var title = res_array[count].restaurant_Name;
 	    var cell = '<div class="card col-md-3" ><img class="card-img-top" src="' + thumbnail + '" alt="Card image cap">\
-                    <div class="card-body"><i class="far fa-comment fa-lg" style="float:right;cursor:pointer" data-toggle="modal" data-target="#reviewModal" item="' + count + '" onClick="showResReview(this)"></i>\
+                    <div class="card-body">\
                     <h5 style="padding-left:10px;cursor:pointer" data-toggle="modal" data-target="#resModal" class="card-title" item="' + count + '" onClick="showResDetails(this)">' + title + '</h5></div>\
                     </div>'
             table.insertAdjacentHTML('beforeend', cell);
@@ -39,7 +39,7 @@ function displayRes(category) {
     message="ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤDig in! ";
     document.getElementById("summary").textContent=message;
     document.getElementById("parent").textContent="";
-
+//<i class="far fa-comment fa-lg" style="float:right;cursor:pointer" data-toggle="modal" data-target="#reviewModal" item="' + count + '" onClick="showResReview(this)"></i>
 }   
 //This function is to display the home page
 //function homePage() {
