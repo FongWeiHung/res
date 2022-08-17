@@ -1,9 +1,11 @@
 var express = require("express");
+var cors = require("cors");
 var userController = require('./controllers/userController');
 var resController = require('./controllers/resController');
 var reviewController = require('./controllers/reviewController');
 const UserDB = require("./models/UserDB");
 var app = express();
+app.use(cors());
 
 app.use(express.static("./public"));//request for html goes through public
 app.use(express.json());
