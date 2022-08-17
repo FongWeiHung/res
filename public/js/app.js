@@ -16,3 +16,5 @@ var florkgood = 'images/florkgood.png';
 var rating = 0;
 
 var user_url = "/user";
+var url_trans =new URL("https://ntwmlqxvze.execute-api.us-west-2.amazonaws.com/dev") 
+var transed = "";
