@@ -6,7 +6,7 @@ function chinese(){
     chinesemsg.open('GET',url_trans,true);
     chinesemsg.setRequestHeader("Content-Type","application/json");
     chinesemsg.onload=function(){
-        transed = JSON.parse(chinese.responseText);
+        transed = JSON.parse(chinesemsg.responseText);
         console.log(transed);
         document.getElementById("message").textContent = transed;
     }
